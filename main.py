@@ -392,12 +392,12 @@ def supported_response(response):
     return Response(response=payload.answer, source_nodes=sources)
 
 
-def print_event_sources(events):
+def print_event_sources(events, file=None):
     events = list(events)
     if not events:
-        print("\nמקורות: לא נמצאו מקורות מתאימים.")
+        print("\nמקורות: לא נמצאו מקורות מתאימים.", file=file)
         return
-    print("\nמקורות (האירועים התומכים בתשובה):")
+    print("\nמקורות (האירועים התומכים בתשובה):", file=file)
     seen = set()
     for event in sorted(events, key=lambda item: (item["calendarName"], item["title"])):
         event_id = event["id"]
@@ -406,12 +406,47 @@ def print_event_sources(events):
         seen.add(event_id)
         print(
             f"{event['title']} | {event['type']} | "
-            f"{event['hebrewDay']} {event['hebrewMonth']} | {event['calendarName']}"
+            f"{event['hebrewDay']} {event['hebrewMonth']} | {event['calendarName']}",
+            file=file,
         )
 
 
-def print_sources(response):
-    print_event_sources(source.node.metadata for source in response.source_nodes)
+def print_sources(response, file=None):
+    print_event_sources((source.node.metadata for source in response.source_nodes), file=file)
+
+def build_query_engine(api_key):
+    """Build the existing RAG engine for either the terminal or a UI."""
+    documents = load_documents()
+    if not documents:
+        print("לא נמצאו אירועים במאגר.")
+        return
+    llm = GoogleGenAI(
+        model="gemini-3.5-flash-lite",
+        api_key=api_key,
+        http_options=types.HttpOptions(
+            timeout=60000, retry_options=types.HttpRetryOptions(attempts=1)
+        ),
+        max_retries=0,
+        generation_config=types.GenerateContentConfig(
+            thinking_config=types.ThinkingConfig(thinking_level="minimal"),
+        ),
+    )
+    embed_model = GoogleGenAIEmbedding(
+        model_name="gemini-embedding-001",
+        api_key=api_key,
+        # One attempt here; the query loop owns the single retry on 504.
+        retries=1,
+        http_options=types.HttpOptions(
+            retry_options=types.HttpRetryOptions(attempts=1)
+        ),
+    )
+    print(f"בונה אינדקס עבור {len(documents)} אירועים...")
+    index = VectorStoreIndex.from_documents(
+        documents,
+        embed_model=embed_model,
+        transformations=[SentenceSplitter(chunk_size=1024, chunk_overlap=0)],
+    )
+    return create_query_engine(index, llm)
 
 def main():
     load_dotenv(BASE_DIR / ".env")
@@ -423,37 +458,9 @@ def main():
         return
 
     try:
-        documents = load_documents()
-        if not documents:
-            print("לא נמצאו אירועים במאגר.")
+        query_engine = build_query_engine(api_key)
+        if query_engine is None:
             return
-        llm = GoogleGenAI(
-            model="gemini-3.5-flash-lite",
-            api_key=api_key,
-            http_options=types.HttpOptions(
-                timeout=60000, retry_options=types.HttpRetryOptions(attempts=1)
-            ),
-            max_retries=0,
-            generation_config=types.GenerateContentConfig(
-                thinking_config=types.ThinkingConfig(thinking_level="minimal"),
-            ),
-        )
-        embed_model = GoogleGenAIEmbedding(
-            model_name="gemini-embedding-001",
-            api_key=api_key,
-            # One attempt here; the query loop owns the single retry on 504.
-            retries=1,
-            http_options=types.HttpOptions(
-                retry_options=types.HttpRetryOptions(attempts=1)
-            ),
-        )
-        print(f"בונה אינדקס עבור {len(documents)} אירועים...")
-        index = VectorStoreIndex.from_documents(
-            documents,
-            embed_model=embed_model,
-            transformations=[SentenceSplitter(chunk_size=1024, chunk_overlap=0)],
-        )
-        query_engine = create_query_engine(index, llm)
     except Exception as error:
         details = {
             "סוג השגיאה": type(error).__name__,
