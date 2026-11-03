@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+Microsoft/
+backups/
+backup*/
+*-backup*/
+*.bak
+*.old

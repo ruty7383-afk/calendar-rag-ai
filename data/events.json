@@ -1,0 +1,402 @@
+[
+    {
+        "id":  "event-001",
+        "title":  "יוסי",
+        "type":  "יום הולדת",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ״ז",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-002",
+        "title":  "יוסי כהן",
+        "type":  "יום הולדת",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ״ז",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-003",
+        "title":  "יוסף לוי",
+        "type":  "יום הולדת",
+        "permission":  "משותף",
+        "hebrewDay":  "כ״ז",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-004",
+        "title":  "תור לרופא",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ״ז",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-005",
+        "title":  "משפחת כהן",
+        "type":  "יום נישואין",
+        "permission":  "פרטי",
+        "hebrewDay":  "י״ב",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-006",
+        "title":  "רחל כהן",
+        "type":  "יום זיכרון",
+        "permission":  "פרטי",
+        "hebrewDay":  "י״ב",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-007",
+        "title":  "פגישת צוות",
+        "type":  "הערה",
+        "permission":  "משותף",
+        "hebrewDay":  "י״ב",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-008",
+        "title":  "ערב חברות",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "כ״ט",
+        "hebrewMonth":  "חשוון",
+        "calendarName":  "חברות",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-009",
+        "title":  "מבחן במתמטיקה",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "ה׳",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-010",
+        "title":  "טיפול שיניים",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "ה׳",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-011",
+        "title":  "פגישה עם המורה",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "י״ח",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-012",
+        "title":  "נועה",
+        "type":  "יום הולדת",
+        "permission":  "משותף",
+        "hebrewDay":  "י״ח",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "חברות",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-013",
+        "title":  "נעה לוי",
+        "type":  "יום הולדת",
+        "permission":  "פרטי",
+        "hebrewDay":  "י״ח",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-014",
+        "title":  "משפחת לוי",
+        "type":  "יום נישואין",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ״ד",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-015",
+        "title":  "הגשת פרויקט",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ״ד",
+        "hebrewMonth":  "כסלו",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-016",
+        "title":  "אסיפת הורים",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "ג׳",
+        "hebrewMonth":  "טבת",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-017",
+        "title":  "דוד כהן",
+        "type":  "יום זיכרון",
+        "permission":  "פרטי",
+        "hebrewDay":  "ג׳",
+        "hebrewMonth":  "טבת",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-018",
+        "title":  "דוד לוי",
+        "type":  "יום הולדת",
+        "permission":  "משותף",
+        "hebrewDay":  "ט״ו",
+        "hebrewMonth":  "טבת",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-019",
+        "title":  "יום הקמת הצוות",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "ט״ו",
+        "hebrewMonth":  "טבת",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-020",
+        "title":  "פגישת תכנון",
+        "type":  "הערה",
+        "permission":  "משותף",
+        "hebrewDay":  "כ״ב",
+        "hebrewMonth":  "טבת",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-021",
+        "title":  "שרה",
+        "type":  "יום הולדת",
+        "permission":  "משותף",
+        "hebrewDay":  "ט״ו",
+        "hebrewMonth":  "שבט",
+        "calendarName":  "חברות",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-022",
+        "title":  "שרה כהן",
+        "type":  "יום הולדת",
+        "permission":  "פרטי",
+        "hebrewDay":  "ט״ו",
+        "hebrewMonth":  "שבט",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-023",
+        "title":  "נטיעות משותפות",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "ט״ו",
+        "hebrewMonth":  "שבט",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-024",
+        "title":  "משפחת ישראלי",
+        "type":  "יום נישואין",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ׳",
+        "hebrewMonth":  "שבט",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-025",
+        "title":  "מבחן בתכנות",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ׳",
+        "hebrewMonth":  "שבט",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-026",
+        "title":  "מפגש תחפושות",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "י״ד",
+        "hebrewMonth":  "אדר",
+        "calendarName":  "חברות",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-027",
+        "title":  "מרים לוי",
+        "type":  "יום זיכרון",
+        "permission":  "פרטי",
+        "hebrewDay":  "ז׳",
+        "hebrewMonth":  "אדר",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-028",
+        "title":  "תור לרופא עור",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "ז׳",
+        "hebrewMonth":  "אדר",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-029",
+        "title":  "יוסף כהן",
+        "type":  "יום הולדת",
+        "permission":  "משותף",
+        "hebrewDay":  "ב׳",
+        "hebrewMonth":  "ניסן",
+        "calendarName":  "חברות",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-030",
+        "title":  "משפחת פרידמן",
+        "type":  "יום נישואין",
+        "permission":  "משותף",
+        "hebrewDay":  "ב׳",
+        "hebrewMonth":  "ניסן",
+        "calendarName":  "חברות",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-031",
+        "title":  "מפגש משפחתי",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "י״ח",
+        "hebrewMonth":  "ניסן",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-032",
+        "title":  "יעקב לוי",
+        "type":  "יום זיכרון",
+        "permission":  "פרטי",
+        "hebrewDay":  "כ״ג",
+        "hebrewMonth":  "אייר",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-033",
+        "title":  "סדנת צוות",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "כ״ג",
+        "hebrewMonth":  "אייר",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-034",
+        "title":  "הגשת פרויקט גמר",
+        "type":  "הערה",
+        "permission":  "פרטי",
+        "hebrewDay":  "ו׳",
+        "hebrewMonth":  "סיוון",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-035",
+        "title":  "משפחת רוזן",
+        "type":  "יום נישואין",
+        "permission":  "משותף",
+        "hebrewDay":  "י״ב",
+        "hebrewMonth":  "סיוון",
+        "calendarName":  "חברות",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-036",
+        "title":  "רחל לוי",
+        "type":  "יום זיכרון",
+        "permission":  "פרטי",
+        "hebrewDay":  "ט׳",
+        "hebrewMonth":  "תמוז",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-037",
+        "title":  "רחל",
+        "type":  "יום הולדת",
+        "permission":  "משותף",
+        "hebrewDay":  "ט׳",
+        "hebrewMonth":  "תמוז",
+        "calendarName":  "חברות",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-038",
+        "title":  "פגישת סיכום שנה",
+        "type":  "הערה",
+        "permission":  "משותף",
+        "hebrewDay":  "כ״א",
+        "hebrewMonth":  "אב",
+        "calendarName":  "עבודה",
+        "repeatsYearly":  false
+    },
+    {
+        "id":  "event-039",
+        "title":  "משה כהן",
+        "type":  "יום זיכרון",
+        "permission":  "פרטי",
+        "hebrewDay":  "ד׳",
+        "hebrewMonth":  "אלול",
+        "calendarName":  "משפחה",
+        "repeatsYearly":  true
+    },
+    {
+        "id":  "event-040",
+        "title":  "מפגש פתיחת שנה",
+        "type":  "אחר",
+        "permission":  "משותף",
+        "hebrewDay":  "ד׳",
+        "hebrewMonth":  "תשרי",
+        "calendarName":  "לימודים",
+        "repeatsYearly":  false
+    }
+]
